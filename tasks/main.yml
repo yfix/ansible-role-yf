@@ -1,11 +1,11 @@
 ---
 - name: Clone latest git repository
-  git: repo=ssh:///git@github.com:yfix/yf.git
-       dest=/www/yf
+  git: repo=https://github.com/yfix/yf.git
+       dest=/home/www/yf
        recursive=yes
        update=yes
 
-- file: path=/synced/www state=directory owner=www-data group=www-data
-- file: src=/synced/www dest=/www state=link
-- file: src=/www dest=/var/www state=link
-- file: src=/www dest=/home/www state=link
+#- file: path=/synced/www state=directory owner=www-data group=www-data
+#- file: src=/synced/www dest=/www state=link
+#- file: src=/www dest=/var/www state=link
+#- file: src=/www dest=/home/www state=link
