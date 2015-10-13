@@ -1,0 +1,21 @@
+---
+dependencies:
+  - { role: yfix.php }
+  - { role: yfix.php-mysql }
+  - { role: yfix.mysql }
+
+galaxy_info:
+  author: yfix
+  description: YF framework installation and maintenance.
+  company: "Yfix group"
+  license: "license (MIT)"
+  min_ansible_version: 1.4
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+    - system
